@@ -9,6 +9,7 @@ import org.jsoup.nodes.Element;
 import com.pluralsight.blog.data.PostRepository;
 import org.jsoup.select.Elements;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -125,6 +126,7 @@ public class Module3_Tests {
         assertNotNull(message, constructor);
     }
     @Test
+    @Ignore
     public void task_2() {
         // Setup
         List<Category> categories = categoryRepository.findAll();
@@ -312,6 +314,7 @@ public class Module3_Tests {
 
 
     @Test
+    @Ignore
     public void task_8() {
         // Task 8 - Verify categoryRepository.findById(id).orElse(null); is called
         // Verify modelMap.put("category", category)
@@ -396,6 +399,7 @@ public class Module3_Tests {
     }
 
     @Test
+    @Ignore
     public void task_10() {
         // Task 10 - Verify CategoryRepository's findAll() is called
         // Verify modelMap.put("categories", categories)
